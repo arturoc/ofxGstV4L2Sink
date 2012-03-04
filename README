@@ -1,0 +1,3 @@
+Allows to send output from an OF application to any other application that supports v4l2 devices like video conference applications
+Uses v4l2sink gst element to create a virtual device which can be used as a camera in any application that supports v4l2
+To use it just call setup to create the device + update to send the pixels for each frame
