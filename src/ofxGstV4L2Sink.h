@@ -18,9 +18,10 @@ class ofxGstV4L2Sink {
 public:
 	ofxGstV4L2Sink();
 	virtual ~ofxGstV4L2Sink();
-
+    int width;
+    int height;
     ofPixels pixels;
-	void setup();
+	void setup(int w, int h);
 	void update(ofPixels & pixels);
 
 private:
