@@ -9,15 +9,22 @@
 #define OFXGSTV4L2SINK_H_
 
 #include "ofPixels.h"
+
 #include "ofGstUtils.h"
+#include <gst/app/gstappsrc.h>
+
 
 class ofxGstV4L2Sink {
 public:
 	ofxGstV4L2Sink();
 	virtual ~ofxGstV4L2Sink();
-
-	void setup();
-	void update(const ofPixels & pixels);
+    int width;
+    int height;
+    int device;
+    ofPixels pixels;
+	void setup(int w, int h);
+	void setup(int w, int h, int dev);
+	void update(ofPixels & pixels);
 
 private:
 	ofGstVideoUtils gst;
