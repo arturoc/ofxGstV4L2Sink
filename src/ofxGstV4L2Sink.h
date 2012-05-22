@@ -22,6 +22,7 @@ public:
     int height;
     ofPixels pixels;
 	void setup(int w, int h);
+	void setup(int w, int h, int dev);
 	void update(ofPixels & pixels);
 
 private:
