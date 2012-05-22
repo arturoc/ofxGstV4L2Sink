@@ -20,6 +20,7 @@ public:
 	virtual ~ofxGstV4L2Sink();
     int width;
     int height;
+    int device;
     ofPixels pixels;
 	void setup(int w, int h);
 	void setup(int w, int h, int dev);
